@@ -23,8 +23,9 @@ Rest are basic libraries os, shutil (for creating/removing folders), random (for
 ### Command to run the code
 The code is set up such that one can give path of "train" folder which usually contains the "classes" folder for data such as "car","motorcycle" etc which then contain videos of that class. This will make it easy for users to just give path of train / val folder and code will augment each video in each class based on "max_clips" we want augmented per input video.
 So if max_clips is 3 then per input, 3 augmented versions will be created. Following command can be used where code is stored, to run video augmentation:
+
 '''
-    python video_augmentation_code3.py --main-folder <Input folder path> --output-folder <Path to save videos at> --max-clips <Per input, # of maximum augmented videos>
+    python video_augmentation_code.py --main-folder <Input folder path> --output-folder <Path to save videos at> --max-clips <Per input, # of maximum augmented videos>
 '''
 
 ### Result:
