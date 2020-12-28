@@ -35,7 +35,7 @@ For augmentation of videos, I have used a random number generator to generate vi
 #### Input clip snapshot:
 ![](input_clip_image.png)
 #### Output clip snapshot:
-![](output_clip_image.jpg)
+![](output_clip_image2.jpg)
 
 ### Conclusion:
 Hopefully this code can be used to make it easier for machine learning enthusiasts to augment their videos to come up with robust models to solve real-world problems. Feel free to tweak the code to your liking. And if the code helps, give a star :)
