@@ -21,9 +21,12 @@ The libraries that come in handy for video augmentation are as follows:
 Rest are basic libraries os, shutil (for creating/removing folders), random (for generating random numbers) and argparse (to fetch command line arguments).
 
 ### Command to run the code
-The code is set up such that one can give path of "train" folder which usually contains the "classes" folder for data such as "car","motorcycle" etc which then contain videos of that class. This will make it easy for users to just give path of train / val folder and code will augment each video in each class based on "max_clips" we want augmented per input video.
-So if max_clips is 3 then per input, 3 augmented versions will be created. Following command can be used where code is stored, to run video augmentation:
-
+For running the code, one should use command line and write the following command where: 
+  'main-folder' is the folder where clips to be augmented reside,
+  'output-folder' is the folder where the augmented clips are stored,
+  'max-clips' is the number of clips we want augmented per input clip
+  
+So if max_clips is 3 then per input, 3 augmented versions of each input clip will be created. Following command can be used where code is stored, to run video augmentation:
 
 python video_augmentation_code.py --main-folder [Input folder path] --output-folder [Path to save videos at] --max-clips <Per input, # of maximum augmented videos>
 
