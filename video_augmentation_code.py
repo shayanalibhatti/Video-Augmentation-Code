@@ -69,7 +69,7 @@ def save(fps,temp_folder_path,path_of_video_to_save):
     
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--main-folder-path', type=str,default='',help='Path of folder that contains classes of clips to be augmented',required=True)
+    parser.add_argument('--main-folder-path', type=str,default='',help='Path of folder that contains clips to be augmented',required=True)
     parser.add_argument('--output-folder-path', type=str, default='',required=True,help='Path of folder that will contain augmented clips and a temporary folder for holding augmented images')
     parser.add_argument('--max-clips', type=int,required=True,help='Max number of clips to augment per input video sample. Make sure max_clips is less than difference between rotation angle')
     
