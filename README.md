@@ -9,7 +9,7 @@ For image based tasks, we can use any number of augmentation methods. Keras prov
 To augment video, the process is mostly same because a video is actually a collection of pictures (frames) ran fast at a speed called Frames Per Seconds (FPS), thus making it a video.
 
 ### Process:
-Simply put, we will fetch each frame of input videos and augment them just as we augment an image and store all such images in a temporary folder. We then pack those images in temporary folder to create a video.
+Simply put, we will fetch each frame of input videos and augment them just as we augment an image and then create a video using OpenCV.
 
 ### Pre-requisites:
 The libraries that come in handy for video augmentation are as follows: 
