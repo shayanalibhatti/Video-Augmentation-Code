@@ -1,5 +1,5 @@
-# Video-Augmentation-Code
-In this repository, a simple implementation of Video augmentation is provided to augment videos for machine learning training tasks. 
+# Video-Augmentation-Code-With-MultiThreading
+In this repository, a simple implementation of fast video augmentation is provided to augment videos for machine learning training tasks using multithreading. 
 
 ### Introduction:
 In machine learning, a lot of times we have to deal with insufficient data. To remedy this, we augment our data so that our model can generalize well to all kinds of input data and be able to take the right decisions.
@@ -31,7 +31,7 @@ So if max_clips is 3 then per input, 3 augmented versions of each input clip wil
 python video_augmentation_code.py --main-folder [Input folder path] --output-folder [Path to save videos at] --max-clips <Per input, # of maximum augmented videos>
 
 ### Result:
-For augmentation of videos, I have used a random number generator to generate video rotation angle, and same for noise to be added to video. Here is the result of the code, (unfortunately) a snap of each clip as video cannot be posted here. It is just to show how the augmentation works. Feel free to try on your own clips to see augmented videos.
+For augmentation of videos, I have used a random number generator to generate video rotation angle, and same way noise can be added to video or other methods of augmentation which imgaug library provides. Here is the result of the code, (unfortunately) a snap of each clip as video cannot be posted here. It is just to show how the augmentation works. Feel free to try on your own clips to see augmented videos. Multithreading feature adds to the speed of augmentation thus finishing the job quicker.
 #### Input clip snapshot:
 ![](input_clip_image.png)
 #### Output clip snapshot:
